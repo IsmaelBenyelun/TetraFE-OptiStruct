@@ -19,7 +19,7 @@ MATERIAL = Isotropic(E, ν)
 
 ### MESH -- cubic domain with tetrahedral elements
 ELEM_TYPE = Tetra4()
-elems_per_dim = [5, 5, 5]
+elems_per_dim = [1, 1, 1]
 sizes = [100., 100., 100.] # X, Y, Z
 
 n_nodes, n_elems, v_nodes, v_mesh, mechanical_mesh = MeshBuildTetra(sizes, elems_per_dim, E, ν)
